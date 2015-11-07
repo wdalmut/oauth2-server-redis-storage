@@ -15,7 +15,7 @@ class AuthCodeStorageTest extends \PHPUnit_Framework_TestCase
 {
     "auth_code_id": "auth_code_id",
     "expire_time": {$future},
-    "client_redirect_uri": "http://localhost:8080/",
+    "redirect_uri": "http://localhost:8080/",
     "session_id": "session_id"
 }
 EOF

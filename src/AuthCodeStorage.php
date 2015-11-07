@@ -28,7 +28,7 @@ class AuthCodeStorage extends RedisAbstractStorage implements AuthCodeInterface
 
         $token = new AuthCodeEntity($this->server);
         $token->setId($code);
-        $token->setRedirectUri($data['client_redirect_uri']);
+        $token->setRedirectUri($data['redirect_uri']);
         $token->setExpireTime($data['expire_time']);
 
         return $token;
