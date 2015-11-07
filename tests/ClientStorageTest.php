@@ -3,11 +3,6 @@ namespace Corley\OAuth2\Server\Storage\Redis;
 
 use League\OAuth2\Server\Entity\SessionEntity;
 
-/** Mock */
-class RedisMock extends \Predis\Client {
-    public function get() {}
-}
-
 class ClientStorageTest extends \PHPUnit_Framework_TestCase
 {
     /**
