@@ -1,0 +1,4 @@
+vendor
+*.phar
+tags
+*.lock
