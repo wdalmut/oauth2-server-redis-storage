@@ -88,7 +88,7 @@ class SessionStorage extends RedisAbstractStorage implements SessionInterface
 
     public function create($ownerType, $ownerId, $clientId, $clientRedirectUri = null)
     {
-        $sessionId = "session_id";
+        $sessionId = $this->idGenerator->createId();
 
         $this->redis->set("session:{$sessionId}", json_encode([
             "owner_type" => $ownerType,
